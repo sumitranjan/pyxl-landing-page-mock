@@ -1,7 +1,9 @@
 import React from "react";
 import Benefits from "./components/Benefits/Benefits";
+import Designers from "./components/Designers/Designers";
 import Developers from "./components/Developers/Developers";
 import Heading from "./components/Heading/Heading";
+import Manages from "./components/Manages/Manages";
 import Navbar from "./components/Navbar/Navbar";
 import Remote from "./components/Remote/Remote";
 import RemoteDevelopers from "./components/RemoteDevelopers/RemoteDevelopers";
@@ -16,7 +18,9 @@ const Homepage = () => {
       <Remote />
       <RemoteDevelopers />
       <Turing />
-      <Developers/>
+      <Developers />
+      <Designers />
+      <Manages />
     </div>
   );
 };

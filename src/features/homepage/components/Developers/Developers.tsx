@@ -23,7 +23,7 @@ const Developers = () => {
         container
         direction="column"
         justifyContent="center"
-        sx={{ minHeight: "90vh" }}
+        sx={{ minHeight: "80vh" }}
       >
         <Typography variant="h4">
           100 Million developers from 23 countries{" "}

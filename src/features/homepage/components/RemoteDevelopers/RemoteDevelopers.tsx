@@ -70,6 +70,7 @@ const RemoteDevelopers = () => {
                     sx={{
                       listStyleType: "disc",
                       paddingLeft: 3,
+                      color: "white",
                     }}
                   >
                     <ListItem
@@ -111,6 +112,7 @@ const RemoteDevelopers = () => {
                   maxWidth: 400,
                   backgroundColor: "#422e80",
                   borderRadius: 6,
+                  color: "white",
                 }}
               >
                 ;
@@ -214,6 +216,7 @@ const RemoteDevelopers = () => {
                     sx={{
                       listStyleType: "disc",
                       paddingLeft: 3,
+                      color: "white",
                     }}
                   >
                     <ListItem
