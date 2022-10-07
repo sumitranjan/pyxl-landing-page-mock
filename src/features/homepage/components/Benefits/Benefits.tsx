@@ -10,7 +10,7 @@ const Benefits = () => {
         direction="column"
         alignContent="center"
         justifyContent="center"
-        sx={{ minHeight: "100vh" }}
+        sx={{ minHeight: "90vh" }}
       >
         <Typography variant="h4" align="center">
           We now live in a remote-first world

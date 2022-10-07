@@ -23,7 +23,7 @@ const RemoteDevelopers = () => {
         direction="column"
         alignContent="center"
         textAlign="center"
-        sx={{ minHeight: "90vh" }}
+        sx={{ minHeight: "100vh" }}
       >
         <Container
           sx={{
