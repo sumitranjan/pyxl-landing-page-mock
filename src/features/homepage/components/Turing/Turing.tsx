@@ -9,39 +9,37 @@ const Turing = () => {
   }
   const CustomeCard = ({ heading, stats, content }: MessageProps) => {
     return (
-      <Container>
-        <Grid item >
-          <Card
-            sx={{
-              maxWidth: 350,
-              minHeight: 200,
-              borderRadius: 6,
-              marginTop: 10,
-              bgcolor: "#422e80",
-              textAlign: "left",
-            }}
+      <Grid item sx={{ margin: "auto" }}>
+        <Card
+          sx={{
+            maxWidth: 250,
+            minHeight: 200,
+            borderRadius: 6,
+            marginTop: 8,
+            bgcolor: "#422e80",
+            textAlign: "left",
+          }}
+        >
+          <Typography
+            variant="subtitle1"
+            sx={{ marginTop: 3, marginLeft: 4, marginRight: 2 }}
           >
-            <Typography
-              variant="subtitle1"
-              sx={{ marginTop: 3, marginLeft: 4, marginRight: 2 }}
-            >
-              {heading}
-            </Typography>
-            <Typography
-              variant="h4"
-              sx={{ marginTop: 1, marginLeft: 4, marginRight: 2 }}
-            >
-              {stats}
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              sx={{ marginTop: 1, marginLeft: 4, marginRight: 2 }}
-            >
-              {content}
-            </Typography>
-          </Card>
-        </Grid>
-      </Container>
+            {heading}
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{ marginTop: 1, marginLeft: 4, marginRight: 2 }}
+          >
+            {stats}
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{ marginTop: 1, marginLeft: 4, marginRight: 2 }}
+          >
+            {content}
+          </Typography>
+        </Card>
+      </Grid>
     );
   };
   return (
@@ -51,10 +49,12 @@ const Turing = () => {
         justifyContent="center"
         alignContent="center"
         textAlign="center"
-        sx={{ minHeight: "90vh" }}
+        sx={{ minHeight: "100vh"}}
+        marginTop="5%"
+        
       >
         <Typography variant="h4">Why businesses choose Turing</Typography>
-        <Grid display="flex">
+        <Grid container spacing={2}>
           <CustomeCard
             heading="speed"
             stats="3 days"
@@ -68,9 +68,7 @@ const Turing = () => {
           <CustomeCard
             heading="Retention"
             stats="97%"
-            content="engagement success rate.
-
-            "
+            content="engagement success rates."
           />
         </Grid>
       </Grid>

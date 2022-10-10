@@ -12,10 +12,113 @@ import {
   ListItemText,
   ListItem,
   List,
+  Box,
 } from "@mui/material";
 import PrimaryButton from "../Button/PrimaryButton";
 
 const RemoteDevelopers = () => {
+  interface MessageProps {
+    title: string;
+    data: string[];
+  }
+  const CardCustome = ({ title, data }: MessageProps) => {
+    return (
+      <Box >
+        <Grid item xs={12} md={11} >
+          <Card
+            sx={{
+              maxWidth: 400,
+              backgroundColor: "#2f2f30",
+              borderRadius: 6,
+              marginTop: 5,
+              minHeight: 320,
+            }}
+          >
+            ;
+            <Avatar
+              sx={{ width: 80, height: 80, margin: "auto" }}
+              variant="square"
+              src={headingImage}
+              alt="Design"
+            />
+            <CardContent>
+              <Typography variant="h6">{title}</Typography>
+              <List
+                sx={{
+                  listStyleType: "disc",
+                  paddingLeft: 3,
+                  color: "white",
+                }}
+              >
+                {data.map((item) => (
+                  <ListItem
+                    sx={{
+                      display: "list-item",
+                      clolor: "white",
+                      paddingTop: 0,
+                    }}
+                  >
+                    <ListItemText primary={item} sx={{ margin: 0 }} />
+                  </ListItem>
+                ))}
+              </List>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Box>
+    );
+  };
+
+  const CenterCard = ({ title, data }: MessageProps) => {
+    return (
+      <Box>
+        <Grid item xs={12} md={10} sx={{ marginTop: "25px" }} >
+          <Card
+            sx={{
+              maxWidth: 500,
+              backgroundColor: "#422e80",
+              borderRadius: 6,
+              marginTop: 10,
+              minHeight: 320,
+              margin: "auto",
+             
+            }}
+          >
+            ;
+            <Avatar
+              sx={{ width: 80, height: 80, margin: "auto" }}
+              variant="square"
+              src={headingImage}
+              alt="Design"
+            />
+            <CardContent>
+              <Typography variant="h6">{title}</Typography>
+              <List
+                sx={{
+                  listStyleType: "disc",
+                  paddingLeft: 3,
+                  color: "white",
+                }}
+              >
+                {data.map((item) => (
+                  <ListItem
+                    sx={{
+                      display: "list-item",
+                      clolor: "white",
+                      paddingTop: 0,
+                    }}
+                  >
+                    <ListItemText primary={item} sx={{ margin: 0 }} />
+                  </ListItem>
+                ))}
+                <PrimaryButton text="TALK TO AN EXPERT" />
+              </List>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Box>
+    );
+  };
   return (
     <Container maxWidth="lg">
       <Grid
@@ -40,73 +143,35 @@ const RemoteDevelopers = () => {
         <Container>
           <Grid
             container
-            columnSpacing={5}
+            columnSpacing={3}
             alignContent="center"
             justifyContent="center"
+            
           >
-            {/* Left Card */}
-            <Grid item xs={8} md={3.5}>
-              <Card
-                sx={{
-                  maxWidth: 400,
-                  backgroundColor: "#2f2f30",
-                  borderRadius: 6,
-                  marginTop: 10,
-                  minHeight: 320,
-                }}
-              >
-                ;
-                <Avatar
-                  sx={{ width: 80, height: 80, margin: "auto" }}
-                  variant="square"
-                  src={headingImage}
-                  alt="Design"
-                />
-                <CardContent>
-                  <Typography variant="h6">
-                    Tailored to your requirements
-                  </Typography>
-                  <List
-                    sx={{
-                      listStyleType: "disc",
-                      paddingLeft: 3,
-                      color: "white",
-                    }}
-                  >
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Role" sx={{ margin: 0 }} />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Tech Stack" />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Seniority Level" />
-                    </ListItem>
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
+            <CardCustome
+              title="Tailored to your requirements"
+              data={["Role", "Tech Stack", "Seniority Level"]}
+            />
+            <CenterCard
+              title="Our Intelligent Talent Cloud Platform Leverages"
+              data={[
+                "Global Sourcing",
+                "Intelligent Vetting",
+                "Extensive Matching",
+                "HR / Payments Compliance",
+                "Automated On-The-Job Quality Control",
+              ]}
+            />
+            <CardCustome
+              title="Your ideal designer"
+              data={[
+                "Typical engagement: Full-time",
+                "Time zone overlap: 4 hours",
+              ]}
+            />
 
             {/* Center Card */}
-            <Grid item xs={8} md={4}>
+            {/* <Grid item xs={8} md={4}>
               <Card
                 sx={{
                   maxWidth: 400,
@@ -115,7 +180,6 @@ const RemoteDevelopers = () => {
                   color: "white",
                 }}
               >
-                ;
                 <Avatar
                   sx={{ width: 80, height: 80, margin: "auto" }}
                   variant="square"
@@ -184,63 +248,7 @@ const RemoteDevelopers = () => {
                   <PrimaryButton text="TALK TO AN EXPERT" />
                 </CardContent>
               </Card>
-            </Grid>
-
-            {/* Right Card */}
-
-            <Grid
-              item
-              xs={8}
-              md={3.5}
-              // sx={{ height: 500, border: "4px solid red" }}
-            >
-              <Card
-                sx={{
-                  maxWidth: 400,
-                  backgroundColor: "#2f2f30",
-                  borderRadius: 6,
-                  marginTop: 10,
-                  minHeight: 320,
-                }}
-              >
-                ;
-                <Avatar
-                  sx={{ width: 80, height: 80, margin: "auto" }}
-                  variant="square"
-                  src={headingImage}
-                  alt="Design"
-                />
-                <CardContent>
-                  <Typography variant="h6">Your ideal designer</Typography>
-                  <List
-                    sx={{
-                      listStyleType: "disc",
-                      paddingLeft: 3,
-                      color: "white",
-                    }}
-                  >
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Typical engagement: Full-time" />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Time zone overlap: 4 hours" />
-                    </ListItem>
-                  </List>
-                </CardContent>
-              </Card>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Container>
       </Grid>

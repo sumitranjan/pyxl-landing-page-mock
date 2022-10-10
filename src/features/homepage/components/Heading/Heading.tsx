@@ -37,7 +37,6 @@ const Heading = () => {
             }}
             alt="Text placeholder"
             src={headingImage}
-            // display={{ xs: "none", sm:"block" ,lg: "block", md:"block" }}
           />
         </Grid>
       </Container>
