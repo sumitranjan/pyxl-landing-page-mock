@@ -25,7 +25,6 @@ function Navbar() {
                 src={logo}
                 sx={{ height: 30 }}
               />
-              {/* <Button variant="contained" sx={{ backgroundColor: "#31bbaf", width: 150, fontSize: 12, fontWeight: 550 }}>GET STARTED</Button> */}
               <PrimaryButton text="GET STARTED" />
             </Grid>
           </Toolbar>
