@@ -2,6 +2,7 @@ import React from "react";
 import Benefits from "./components/Benefits/Benefits";
 import Designers from "./components/Designers/Designers";
 import Developers from "./components/Developers/Developers";
+import Footer from "./components/footer/Footer";
 import Heading from "./components/Heading/Heading";
 import Manages from "./components/Manages/Manages";
 import Navbar from "./components/Navbar/Navbar";
@@ -21,6 +22,7 @@ const Homepage = () => {
       <Developers />
       <Designers />
       <Manages />
+      <Footer />
     </div>
   );
 };
