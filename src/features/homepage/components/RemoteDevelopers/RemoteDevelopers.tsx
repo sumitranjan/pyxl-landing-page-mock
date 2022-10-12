@@ -1,5 +1,5 @@
 import React from "react";
-import headingImage from "../../../../assets/placeholder_image_headline.jpeg";
+import headingImage from "../../../../assets/placeholder_image_headline.jpg";
 import {
   Container,
   Grid,

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
-import headingImage from "../../../../assets/placeholder_image_headline.jpeg";
+import headingImage from "../../../../assets/placeholder_image_headline.jpg";
 import PrimaryButton from "../Button/PrimaryButton";
 
 const Heading = () => {
