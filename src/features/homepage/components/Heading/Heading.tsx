@@ -1,11 +1,12 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import headingImage from "../../../../assets/placeholder_image_headline.jpeg";
 import PrimaryButton from "../Button/PrimaryButton";
 
 const Heading = () => {
+  const theme = useTheme();
   return (
-    <Box sx={{ background: "#171719" }}>
+    <Box sx={{ background: theme.colorConstants.bgColor }}>
       <Container maxWidth={"lg"}>
         <Grid
           container
