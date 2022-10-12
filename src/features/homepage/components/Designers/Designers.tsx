@@ -11,6 +11,20 @@ import {
 import PrimaryButton from "../Button/PrimaryButton";
 
 const Designers = () => {
+  interface MessageProps {
+    text: string;
+  }
+  const ListContainer = ({ text }: MessageProps) => {
+    return (
+      <ListItem
+        sx={{
+          display: "list-item",
+        }}
+      >
+        <ListItemText primary={text} />
+      </ListItem>
+    );
+  };
   return (
     <Container maxWidth="lg">
       <Grid
@@ -29,27 +43,9 @@ const Designers = () => {
             color: "white",
           }}
         >
-          <ListItem
-            sx={{
-              display: "list-item",
-            }}
-          >
-            <ListItemText primary="Vetted once, eligible for life" />
-          </ListItem>
-          <ListItem
-            sx={{
-              display: "list-item",
-            }}
-          >
-            <ListItemText primary="Exclusive Pyxl developer community" />
-          </ListItem>
-          <ListItem
-            sx={{
-              display: "list-item",
-            }}
-          >
-            <ListItemText primary="Income stability thanks to 99% rematch rate" />
-          </ListItem>
+          <ListContainer text="Vetted once, eligible for life" />
+          <ListContainer text="Exclusive Pyxl developer community" />
+          <ListContainer text="Income stability thanks to 99% rematch rate" />
         </List>
 
         <PrimaryButton text="GET A DEMO" />

@@ -21,10 +21,10 @@ const RemoteDevelopers = () => {
     title: string;
     data: string[];
   }
-  const CardCustome = ({ title, data }: MessageProps) => {
+  const SmallCard = ({ title, data }: MessageProps) => {
     return (
       <Box >
-        <Grid item xs={12} md={11} >
+        <Grid item xs={12} md={11}  >
           <Card
             sx={{
               maxWidth: 400,
@@ -32,6 +32,7 @@ const RemoteDevelopers = () => {
               borderRadius: 6,
               marginTop: 5,
               minHeight: 320,
+              
             }}
           >
             ;
@@ -69,10 +70,10 @@ const RemoteDevelopers = () => {
     );
   };
 
-  const CenterCard = ({ title, data }: MessageProps) => {
+  const MediumCard = ({ title, data }: MessageProps) => {
     return (
-      <Box>
-        <Grid item xs={12} md={10} sx={{ marginTop: "25px" }} >
+      <Box >
+        <Grid item xs={12} md={11}>
           <Card
             sx={{
               maxWidth: 500,
@@ -81,7 +82,6 @@ const RemoteDevelopers = () => {
               marginTop: 10,
               minHeight: 320,
               margin: "auto",
-             
             }}
           >
             ;
@@ -148,11 +148,11 @@ const RemoteDevelopers = () => {
             justifyContent="center"
             
           >
-            <CardCustome
+            <SmallCard
               title="Tailored to your requirements"
               data={["Role", "Tech Stack", "Seniority Level"]}
             />
-            <CenterCard
+            <MediumCard
               title="Our Intelligent Talent Cloud Platform Leverages"
               data={[
                 "Global Sourcing",
@@ -162,93 +162,13 @@ const RemoteDevelopers = () => {
                 "Automated On-The-Job Quality Control",
               ]}
             />
-            <CardCustome
+            <SmallCard
               title="Your ideal designer"
               data={[
                 "Typical engagement: Full-time",
                 "Time zone overlap: 4 hours",
               ]}
             />
-
-            {/* Center Card */}
-            {/* <Grid item xs={8} md={4}>
-              <Card
-                sx={{
-                  maxWidth: 400,
-                  backgroundColor: "#422e80",
-                  borderRadius: 6,
-                  color: "white",
-                }}
-              >
-                <Avatar
-                  sx={{ width: 80, height: 80, margin: "auto" }}
-                  variant="square"
-                  src={headingImage}
-                  alt="Design"
-                />
-                <CardContent>
-                  <Typography variant="h6">
-                    Our Intelligent Talent Cloud Platform Leverages
-                  </Typography>
-                  <List
-                    sx={{
-                      listStyleType: "disc",
-                      paddingLeft: 3,
-                    }}
-                  >
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText
-                        primary="Global Sourcing"
-                        sx={{ margin: 0 }}
-                      />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Intelligent Vetting" />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Extensive Matching" />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="HR / Payments Compliance" />
-                    </ListItem>
-                    <ListItem
-                      sx={{
-                        display: "list-item",
-                        clolor: "white",
-                        paddingTop: 0,
-                      }}
-                    >
-                      <ListItemText primary="Automated On-The-Job Quality Control" />
-                    </ListItem>
-                  </List>
-                  <PrimaryButton text="TALK TO AN EXPERT" />
-                </CardContent>
-              </Card>
-            </Grid> */}
           </Grid>
         </Container>
       </Grid>
