@@ -120,18 +120,21 @@ const RemoteDevelopers = () => {
     );
   };
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <Grid
         container
         direction="column"
         alignContent="center"
         textAlign="center"
         sx={{ minHeight: "100vh" }}
+     
       >
-        <Container
+        <Container 
           sx={{
             marginBottom: 10,
+            marginTop:10
           }}
+          
         >
           <Typography variant="h4" align="center">
             Pyxl combines planetary reach and AI to

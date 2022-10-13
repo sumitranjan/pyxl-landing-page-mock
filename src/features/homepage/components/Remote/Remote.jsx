@@ -1,15 +1,17 @@
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, useTheme } from "@mui/material";
 import PrimaryButton from "../Button/PrimaryButton";
 
 const Remote = () => {
+  const theme = useTheme();
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl" sx={{ background: theme.colorConstants.bgGrayColor }}>
       <Grid
         container
         direction="column"
         justifyContent="center"
         sx={{ minHeight: "100vh" }}
+        ml={5}
       >
         <Typography variant="h4">Remote is challenging</Typography>;
         <Typography variant="subtitle1">
