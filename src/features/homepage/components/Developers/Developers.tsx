@@ -1,8 +1,10 @@
 import React from "react";
-import { Card, CardContent, Container, Grid, Typography } from "@mui/material";
+import { Card, CardContent, Container, Grid, Typography ,useTheme} from "@mui/material";
 import PrimaryButton from "../Button/PrimaryButton";
 
+
 const Developers = () => {
+  const theme = useTheme();
   interface MessageProps {
     stats: string;
     content: string;
@@ -18,12 +20,13 @@ const Developers = () => {
     );
   };
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl" sx={{ background: theme.colorConstants.bgBlueColor }}>
       <Grid
         container
         direction="column"
         justifyContent="center"
         sx={{ minHeight: "80vh" }}
+        ml={5}
       >
         <Typography variant="h4">
           100 Million developers from 23 countries{" "}

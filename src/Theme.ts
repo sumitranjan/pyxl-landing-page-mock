@@ -22,7 +22,7 @@ const blackBackgroundColor = "#171717";
 const seafoamColor = "#31BBAF";
 const whiteColor = "#FFF";
 const grayColor="#202022";
-const blueBackgroundColor = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,27,54,1) 35%, rgba(0,212,255,1) 100%);";
+const blueBackgroundColor = "linear-gradient(-45deg,#3088ee,black);";
 
 const theme = createTheme({
   typography: {
