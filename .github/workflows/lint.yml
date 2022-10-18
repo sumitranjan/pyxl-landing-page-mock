@@ -37,5 +37,3 @@ jobs:
           eslint_extensions: "ts"
           prettier: true
           
-      - name: Prettier Action
-        uses: creyD/prettier_action@v4.2
