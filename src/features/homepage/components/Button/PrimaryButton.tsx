@@ -1,10 +1,11 @@
 import { Button } from "@mui/material";
+import React from 'react';
 
 type PrimaryButtonProps = {
     text: string;
 };
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text }) => {
+const PrimaryButton = ({ text }:PrimaryButtonProps) => {
     return (
         <Button
             variant="contained"

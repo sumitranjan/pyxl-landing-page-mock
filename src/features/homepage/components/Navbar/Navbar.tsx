@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, AppBar, IconButton, Toolbar, Typography, Container, useTheme, Grid } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, AppBar, Toolbar, Container, useTheme, Grid } from "@mui/material";
 import logo from '../../../../assets/pyxl_logo_seagreen.png';
 import PrimaryButton from "../Button/PrimaryButton";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Typography, Grid, Card, useTheme } from "@mui/material";
+import {  Container, Typography, Grid, Card, useTheme } from "@mui/material";
 import PublicIcon from "@mui/icons-material/Public";
 
 const Benefits = () => {

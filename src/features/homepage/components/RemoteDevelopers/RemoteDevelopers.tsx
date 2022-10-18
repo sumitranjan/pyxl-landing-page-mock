@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
 import headingImage from "../../../../assets/placeholder_image_headline.jpg";
 import {
@@ -5,10 +6,8 @@ import {
   Grid,
   Typography,
   Card,
-  CardMedia,
   CardContent,
   Avatar,
-  ListItemButton,
   ListItemText,
   ListItem,
   List,
@@ -52,6 +51,7 @@ const RemoteDevelopers = () => {
                 }}
               >
                 {data.map((item) => (
+                  // eslint-disable-next-line react/jsx-key
                   <ListItem
                     sx={{
                       display: "list-item",

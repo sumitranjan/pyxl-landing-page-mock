@@ -21,7 +21,7 @@ const Heading = () => {
             </Typography>
             <Typography variant="subtitle1">
               Our AI-backed Intelligent Talent Cloud helps you source, vet,
-              match, and manage the world's best non-tech talent remotely.
+              match, and manage the world&rsquos best non-tech talent remotely.
             </Typography>
             <PrimaryButton text="GET STARTED" />
           </Grid>

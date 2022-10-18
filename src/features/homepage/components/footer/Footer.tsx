@@ -1,9 +1,10 @@
 import { Box, Container, Grid, Typography,useTheme } from "@mui/material";
 import pyxlLogo from "../../../../assets/pyxl_logo_seagreen.png";
+import React from 'react';
 
 type FooterProps = {
-  title: String;
-  data: String[];
+  title: string;
+  data: string[];
 };
 
 const FooterList: React.FC<FooterProps> = ({ title, data }) => {
@@ -18,8 +19,8 @@ const FooterList: React.FC<FooterProps> = ({ title, data }) => {
       <Typography sx={{ marginBottom: 1, marginTop: 1 }} variant="h6">
         {title}
       </Typography>
-      {data.map((item) => (
-        <Typography>{item}</Typography>
+      {data.map((item,index) => (
+        <Typography key={index}>{item}</Typography>
       ))}
     </Box>
   );
