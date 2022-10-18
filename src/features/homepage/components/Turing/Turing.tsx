@@ -1,4 +1,11 @@
-import { Box, Card, Container, Grid, Typography,useTheme } from "@mui/material";
+import {
+  Box,
+  Card,
+  Container,
+  Grid,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 
 const Turing = () => {
@@ -44,15 +51,17 @@ const Turing = () => {
     );
   };
   return (
-    <Container maxWidth="xl" sx={{ background: theme.colorConstants.bgGrayColor }}>
+    <Container
+      maxWidth="xl"
+      sx={{ background: theme.colorConstants.bgGrayColor }}
+    >
       <Grid
         container
         justifyContent="center"
         alignContent="center"
         textAlign="center"
-        sx={{ minHeight: "100vh"}}
+        sx={{ minHeight: "100vh" }}
         marginTop="5%"
-        
       >
         <Typography variant="h4">Why businesses choose Turing</Typography>
         <Grid container spacing={2}>

@@ -22,8 +22,8 @@ const RemoteDevelopers = () => {
   }
   const SmallCard = ({ title, data }: MessageProps) => {
     return (
-      <Box >
-        <Grid item xs={12} md={11}  >
+      <Box>
+        <Grid item xs={12} md={11}>
           <Card
             sx={{
               maxWidth: 400,
@@ -31,7 +31,6 @@ const RemoteDevelopers = () => {
               borderRadius: 6,
               marginTop: 5,
               minHeight: 320,
-              
             }}
           >
             ;
@@ -72,7 +71,7 @@ const RemoteDevelopers = () => {
 
   const MediumCard = ({ title, data }: MessageProps) => {
     return (
-      <Box >
+      <Box>
         <Grid item xs={12} md={11}>
           <Card
             sx={{
@@ -127,14 +126,12 @@ const RemoteDevelopers = () => {
         alignContent="center"
         textAlign="center"
         sx={{ minHeight: "100vh" }}
-     
       >
-        <Container 
+        <Container
           sx={{
             marginBottom: 10,
-            marginTop:10
+            marginTop: 10,
           }}
-          
         >
           <Typography variant="h4" align="center">
             Pyxl combines planetary reach and AI to
@@ -149,7 +146,6 @@ const RemoteDevelopers = () => {
             columnSpacing={3}
             alignContent="center"
             justifyContent="center"
-            
           >
             <SmallCard
               title="Tailored to your requirements"

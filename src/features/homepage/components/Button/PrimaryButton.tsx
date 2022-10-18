@@ -1,19 +1,19 @@
 import { Button } from "@mui/material";
-import React from 'react';
+import React from "react";
 
 type PrimaryButtonProps = {
-    text: string;
+  text: string;
 };
 
-const PrimaryButton = ({ text }:PrimaryButtonProps) => {
-    return (
-        <Button
-            variant="contained"
-            sx={{ width: 150, fontSize: 12, fontWeight: 600 }}
-        >
-            {text}
-        </Button>
-    )
-}
+const PrimaryButton = ({ text }: PrimaryButtonProps) => {
+  return (
+    <Button
+      variant="contained"
+      sx={{ width: 150, fontSize: 12, fontWeight: 600 }}
+    >
+      {text}
+    </Button>
+  );
+};
 
-export default PrimaryButton
+export default PrimaryButton;

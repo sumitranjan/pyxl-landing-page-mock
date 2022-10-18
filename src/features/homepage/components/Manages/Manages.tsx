@@ -16,15 +16,13 @@ const Manages = () => {
       >
         <Typography variant="h4">Hire and manage remote designers</Typography>
         <Typography variant="subtitle1">
-          Tell us the skills you need and we&rsquoll find the best designers for you
-          in days, not weeks.
+          Tell us the skills you need and we&rsquoll find the best designers for
+          you in days, not weeks.
         </Typography>
-        <Box sx={{marginTop: 4}}>
-        <PrimaryButton text="GET STARTED" />
+        <Box sx={{ marginTop: 4 }}>
+          <PrimaryButton text="GET STARTED" />
         </Box>
-        
       </Grid>
-     
     </Container>
   );
 };

@@ -1,7 +1,6 @@
 import React from "react";
-import {  Container, Grid, Typography ,useTheme} from "@mui/material";
+import { Container, Grid, Typography, useTheme } from "@mui/material";
 import PrimaryButton from "../Button/PrimaryButton";
-
 
 const Developers = () => {
   const theme = useTheme();
@@ -20,7 +19,10 @@ const Developers = () => {
     );
   };
   return (
-    <Container maxWidth="xl" sx={{ background: theme.colorConstants.bgBlueColor }}>
+    <Container
+      maxWidth="xl"
+      sx={{ background: theme.colorConstants.bgBlueColor }}
+    >
       <Grid
         container
         direction="column"

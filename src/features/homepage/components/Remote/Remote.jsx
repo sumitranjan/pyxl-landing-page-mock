@@ -5,7 +5,10 @@ import PrimaryButton from "../Button/PrimaryButton";
 const Remote = () => {
   const theme = useTheme();
   return (
-    <Container maxWidth="xl" sx={{ background: theme.colorConstants.bgGrayColor }}>
+    <Container
+      maxWidth="xl"
+      sx={{ background: theme.colorConstants.bgGrayColor }}
+    >
       <Grid
         container
         direction="column"
@@ -26,7 +29,7 @@ const Remote = () => {
           Making remote development easy, compliant, and secure
         </Typography>
         ;
-        <PrimaryButton text="GET A DEMO"/>
+        <PrimaryButton text="GET A DEMO" />
       </Grid>
     </Container>
   );

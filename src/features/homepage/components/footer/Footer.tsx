@@ -1,6 +1,6 @@
-import { Box, Container, Grid, Typography,useTheme } from "@mui/material";
+import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import pyxlLogo from "../../../../assets/pyxl_logo_seagreen.png";
-import React from 'react';
+import React from "react";
 
 type FooterProps = {
   title: string;
@@ -8,7 +8,6 @@ type FooterProps = {
 };
 
 const FooterList: React.FC<FooterProps> = ({ title, data }) => {
-
   return (
     <Box
       sx={{
@@ -19,7 +18,7 @@ const FooterList: React.FC<FooterProps> = ({ title, data }) => {
       <Typography sx={{ marginBottom: 1, marginTop: 1 }} variant="h6">
         {title}
       </Typography>
-      {data.map((item,index) => (
+      {data.map((item, index) => (
         <Typography key={index}>{item}</Typography>
       ))}
     </Box>
@@ -27,7 +26,6 @@ const FooterList: React.FC<FooterProps> = ({ title, data }) => {
 };
 
 const FooterLinks = () => {
-
   return (
     <Container maxWidth="lg" sx={{ marginTop: 10, marginBottom: 10 }}>
       <Grid
@@ -75,7 +73,6 @@ const FooterLinks = () => {
 };
 
 const Copyright = () => {
-
   return (
     <Container maxWidth="lg" sx={{ marginBottom: 4 }}>
       <Grid
@@ -93,7 +90,13 @@ const Copyright = () => {
 const Footer = () => {
   const theme = useTheme();
   return (
-    <Box mt={5} sx={{ background: theme.colorConstants.bgGrayColor , border:".5px solid"}}>
+    <Box
+      mt={5}
+      sx={{
+        background: theme.colorConstants.bgGrayColor,
+        border: ".5px solid",
+      }}
+    >
       <FooterLinks />
       <hr />
       <Copyright />
